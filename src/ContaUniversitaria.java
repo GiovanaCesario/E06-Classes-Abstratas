@@ -4,15 +4,15 @@ public class ContaUniversitaria extends Conta {
 
         super(numero, dono, saldo, limite);
 
-        limite = setLimite(limite);
+        setLimite(limite);
     }
 
-    public double setLimite(double limite) {
+    public void setLimite(double limite) {
         if (limite < 0)
             limite = 0;
         if (limite > 500)
             limite = 500;
 
-        return limite;
+        limite = this.limite;
     }
 }

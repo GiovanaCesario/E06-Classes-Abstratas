@@ -6,7 +6,7 @@ public abstract class Conta {
 
     private double saldo;
 
-    private double limite;
+    protected double limite;
 
     private Operacao[] operacoes;
 
@@ -111,7 +111,7 @@ public abstract class Conta {
         this.dono = dono;
     }
 
-    public abstract double setLimite(double limite);
+    public abstract void setLimite(double limite);
 
     public void setLimiteInterno(double limite) {
         this.limite = limite;
