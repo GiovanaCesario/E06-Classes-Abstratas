@@ -112,8 +112,4 @@ public abstract class Conta {
     }
 
     public abstract void setLimite(double limite);
-
-    public void setLimiteInterno(double limite) {
-        this.limite = limite;
-    }
 }

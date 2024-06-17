@@ -8,11 +8,12 @@ public class ContaUniversitaria extends Conta {
     }
 
     public void setLimite(double limite) {
+
         if (limite < 0)
             limite = 0;
         if (limite > 500)
             limite = 500;
 
-        limite = this.limite;
+        this.limite = limite;
     }
 }
